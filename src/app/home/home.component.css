@@ -19,3 +19,8 @@ ul li a{
   overflow: hidden;
   color:red;
 }
+
+li a:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
