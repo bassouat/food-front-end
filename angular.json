@@ -98,9 +98,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "food-project-bass"
+  "defaultProject": "food-project-bass",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
