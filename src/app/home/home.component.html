@@ -7,6 +7,17 @@
           <span class="favorite {{food.favorite?'':'not'}}"><i class="fa-solid fa-heart"></i></span>
           <star-rating [value]="food.stars" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px"
                        [readonly]="true"></star-rating>
+          <div class="">
+            <div class="origins">
+              <span *ngFor="let origin of food.origins">
+                  {{origin}}
+              </span>
+            </div>
+            <div class="cook-time">
+              <span><mat-icon>access_time</mat-icon></span>
+              {{food.cookTime}}
+            </div>
+          </div>
         </div>
       </a>
 
